@@ -1,0 +1,135 @@
+/*!imports */
+@font-face {
+    font-family:'Poppins' ;
+    src: url(./fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'Poppins' ;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family:'Open Sans' ;
+    src: url(./fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+/*!reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/*!globla */
+:root{
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    background-color: var(--Violet);
+    background-image:url(./images/bg-mobile.svg) ;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: "OpenSans";
+    font-family: "Poppins";
+}
+h1,h2,i{
+    color: rgb(255, 255, 255);
+}
+/*!body */
+main{
+    width: 90%;
+    margin: 1em 2em;
+}
+h1,img{
+    margin-bottom: 1em;
+}
+img{
+    width: 88%;
+}
+.container{
+    margin-top: 2.5em;
+}
+.container,footer{
+    text-align: center;
+}
+h2{
+    width: 90%;
+    margin-bottom: .8em;
+}
+p{
+    width: 95%;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.61);
+}
+.button{
+    color: var(--Violet);
+    width: 60%;
+    padding: .9em;
+    border-radius: 20px;
+    margin-top:1em ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+footer{
+    margin-top: 4em;
+}
+.icon-1 i{
+    width: 1.5em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.fix{
+    clear: both;
+}
+
+/*!media query */
+@media screen and (min-width:1200px) {
+   body{
+    background-image: url(./images/bg-desktop.svg);
+   }
+    main{
+    width: 100%;
+    margin: 4em ;
+   }
+   h2{
+    width: 60%;
+   }
+   header{
+    display: inline-block;
+     width: 40%;
+   }
+   .container {
+    width: 33%;
+    float: right;
+    margin-top: 10em ;
+    text-align: start;
+    transform: translate(-450px);
+}
+    footer{
+    width: 50%;
+   } 
+   .button{
+    width: 30%;
+    cursor: pointer;
+   }
+} 
